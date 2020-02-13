@@ -81,6 +81,8 @@
                         </ul>
                     </li>
                 </ul>
+                <br>
+                <a href="/phpopdrachten/index.php">Terug</a>
             </section>
         </aside>
         <main id="wrapper">
