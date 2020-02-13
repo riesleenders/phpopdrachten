@@ -9,6 +9,8 @@
     echo "Hallo Wereld";
     ?>
 </h1>
+<br>
+<a href="/phpopdrachten/index.php">Terug</a>
 
 </body>
 </html>
