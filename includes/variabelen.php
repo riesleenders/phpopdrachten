@@ -1,6 +1,6 @@
 <?php
 
-    $year = date('Y');
+    $year = date("Y");
 
 
     $name = "Ries";

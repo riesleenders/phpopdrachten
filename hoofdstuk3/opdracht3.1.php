@@ -6,6 +6,7 @@
  * File: opdracht3.1.php
  */
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -88,6 +89,47 @@
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
     <?php
+    $event = "Elfstedentocht";
+    $eventInFries = "Alvestêdetocht";
+    $amountOfKilometers = 200;
+    $eventType = "schaatstocht";
+    $groundType = "natuurijs";
+    $organisator = "Koninklijke Vereniging De Friesche Elf Steden";
+    $startFinishPlace = "Leeuwarden";
+    $province = "Friesland";
+    $firstYearOfEvent = 1909;
+    $amountOfTimeOfEvent = 15;
+    $amountOfTimeInWinter = 1;
+
+    $verhaal = ("<p>De ". $event . " (Fries: " . $eventInFries . ") is een " . 200 . " kilometer <br>
+    lange " . $eventType . " over " . $groundType . " die wordt georganiseerd door <br>
+    de " . $organisator . ". " . $startFinishPlace . ", <br>
+    de hoofdstad van " . $province . ", is start- en aankomstplaats. De <br>" .
+    $event . " is inmiddels " . $amountOfTimeOfEvent . " maal verreden en werd voor het <br>
+    eerst in " . $firstYearOfEvent . " gereden en wordt maximaal " . $amountOfTimeInWinter . " keer per winter <br>
+    gehouden.</p>");
+
+    echo("$verhaal");
+
+    $txt1 = "Elfstedentocht";
+    $txt2 = "Alvestêdetocht";
+    $txt3 = 200;
+    $txt4 = "schaatstocht";
+    $txt5 = "natuurijs";
+    $txt6 = "Koninklijke Vereniging De Friesche Elf Steden";
+    $txt7 = "Leeuwarden";
+    $txt8 = "Friesland";
+    $txt9 = 15;
+    $txt10 = 1909;
+    $txt11 = 1;
+
+    echo("De " . $txt1 . " (Fries: " . " $txt2" . " is een " . $txt3 . " kilometer <br>");
+    echo("lange " . $txt4 . " over " . $txt5 . " die wordt georganiseerd door <br>");
+    echo("de " . $txt6 . "." . $txt7 . ",<br>");
+    echo("de hoofdstad van " . $txt8 . ", is start- en aankomstplaats. De <br>");
+    echo($txt1 . " is inmiddels " . $txt9 . " maal verreden en werd voor het <br>");
+    echo("eerst in " . $txt10 . " gereden en wordt maximaal" . $txt11 . " keer per winter <br>");
+    echo("gehouden.");
 
 
     ?>
