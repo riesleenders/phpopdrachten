@@ -90,7 +90,7 @@
         <?php
             // Declareren en initialiseren van de gewenste variabelen
             $trafficLightColor = "Groen";
-            $ambulanceComing = true;
+            $ambulanceComing = True;
 
             // driveOn declareren en initialiseren
             $driveOn = true;
@@ -133,11 +133,25 @@
         <?php
 
             // Deel 2: Alcohol in verschillende landen opdracht
-            $countryName = "Nederland";
+            $countryName = "Cyprus";
             $currentAge = 16;
+
 
             // Tonen algemene gegevens drank
             echo("<p>Je woont in ". $countryName . " en je bent " . $currentAge . " jaar oud.</p>");
+
+
+            // Tonen van de drank informatie Nederland
+            if($countryName == "Nederland" && $currentAge >= 18)
+            {
+                echo("<p>Je mag hier sterke en zwakke alcohol drinken.</p>");
+            }
+            else if($countryName == "Nederland" && $currentAge < 18)
+            {
+                echo("<p>Hier mag je geen alcohol drinken.</p>");
+            }
+
+
 
             // Tonen van de drank informatie België
             if($countryName == "België" && $currentAge >= 16 && $currentAge <= 18)
@@ -146,27 +160,51 @@
             }
             else if($countryName == "België" && $currentAge >= 18)
             {
-                echo("<p>Je mag hier sterke alcohol drinken.</p>");
+                echo("<p>Je mag hier sterke en zwakke alcohol drinken.</p>");
             }
+            else if($countryName == "België" && $currentAge < 16)
+            {
+                echo("<p>hier mag je geen alcohol drinken.</p>");
+            }
+
+
 
             // Tonen van de drank informatie Bulgarijë
             if($countryName == "Bulgarije" && $currentAge >= 18)
             {
                 echo("<p>Je mag hier sterke en zwakke alcohol drinken.</p>");
             }
-            else
+            else if($countryName == "Cyprus" && $currentAge < 17)
             {
                 echo("<p>Hier mag je geen alcohol drinken.</p>");
             }
 
-            // Tonen van de drank informatie
-            if($countryName == "België" && $currentAge >= 16 && $currentAge <= 18)
+
+
+            // Tonen van de drank informatie Cyprus
+            if($countryName == "Cyprus" && $currentAge >= 17)
+            {
+                echo("<p>Je mag hier sterke en zwakke alcohol drinken.</p>");
+            }
+            else if($countryName == "Cyprus" && $currentAge < 17)
+            {
+                echo("<p>Hier mag je geen alcohol drinken.</p>");
+            }
+
+
+
+            // Tonen van de drank informatie Zweden
+            if($countryName == "Zweden" && $currentAge >= 18 && $currentAge <= 19)
             {
                 echo("<p>Je mag hier zwakke alcohol drinken.</p>");
             }
-            else if($countryName == "België" && $currentAge >= 18)
+            else if($countryName == "Zweden" && $currentAge >= 20)
             {
-                echo("<p>Je mag hier sterke alcohol drinken.</p>");
+                echo("<p>Hier mag je sterke en zwakke alcohol drinken.</p>");
+            }
+            else if($countryName == "Zweden" && $currentAge < 18)
+            {
+                echo("<p>Hier mag je geen alcohol drinken.</p>");
             }
 
 

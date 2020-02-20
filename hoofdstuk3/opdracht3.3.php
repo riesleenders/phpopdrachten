@@ -89,7 +89,6 @@
         <h2>Uitwerkingen</h2>
         <?php
 
-
         ?>
     </main>
     </body>
