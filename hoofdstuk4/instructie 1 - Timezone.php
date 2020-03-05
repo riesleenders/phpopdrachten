@@ -1,9 +1,9 @@
 <?php
 /**
  * User: Ries Leenders
- * Date: 20-2-2020
+ * Date: 3-3-2020
  * Time: 8:42
- * File: opdracht3.2.php
+ * File: instructie H4 - 1.php
  */
 ?>
 <!DOCTYPE HTML>
