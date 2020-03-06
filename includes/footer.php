@@ -20,9 +20,9 @@
 <?php
 
 date_default_timezone_set("Europe/Amsterdam");
-$uur = date("H");
+date($uur = "H");
 
-if($uur = 1 or 2 or 3 or 4 or 5)
+if($uur = "12")
 { echo("Goedennacht"); }
 else
 { }
@@ -42,20 +42,5 @@ if($uur = 18 or 19 or 20 or 21 or 22 or 23)
 else
 { }
 
-switch($uur)
-    {
-    case "Mon":
-        echo("Vandaag is het de eerste dag van de week.");
-        break;
-    case "Tue":
-        echo("Vandaag is het de tweede dag van de week.");
-        break;
-    case "Wed":
-        echo("Vandaag is het de derde dag van de week.");
-        break;
-    case "Thu":
-        echo("Vandaag is het de vierde dag van de week.");
-        break;
-    }
 ?>
 
