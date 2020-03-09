@@ -19,28 +19,26 @@
 
 <?php
 
-date_default_timezone_set("Europe/Amsterdam");
-date($uur = "H");
 
-if($uur = "12")
-{ echo("Goedennacht"); }
-else
-{ }
+$uur = date ('H');
+$text = "";
+if ($uur <5)
+{
+    $text = "Goedenacht";
+}
+elseif ($uur <=12)
+{
+    $text = "Goedemorgen";
+}
+elseif ($uur <=18)
+{
+    $text = "Goedemiddag";
+}
+elseif ($uur <=0)
+{
+    $text = "Goedeavond";
+};
 
-if($uur = 6 or 7 or 8 or 9 or 10 or 11)
-{ echo("Goedenochtend"); }
-else
-{ }
+echo $text;
 
-if($uur = 12 or 13 or 14 or 15 or 16 or 17)
-{ echo("Goedenmiddag"); }
-else
-{ }
-
-if($uur = 18 or 19 or 20 or 21 or 22 or 23)
-{ echo("Goedenavond"); }
-else
-{ }
-
-?>
 
