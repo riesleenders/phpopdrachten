@@ -19,14 +19,14 @@
 
 <?php
 
-
+date_default_timezone_set("Europe/Amsterdam");
 $uur = date ('H');
 $text = "";
 if ($uur <5)
 {
     $text = "Goedenacht";
 }
-elseif ($uur <=12)
+elseif ($uur <12)
 {
     $text = "Goedemorgen";
 }
