@@ -2,8 +2,8 @@
 /**
  * User: Ries Leenders
  * Date: 22-3-2020
- * Time: 10:20
- * File: form_data.php
+ * Time: 11:00
+ * File: opdracht5.2.php
  */
 ?>
     <!DOCTYPE HTML>
@@ -88,33 +88,69 @@
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
 
-        <table>
-            <tr>
-                <td>Bedrijfsnaam:</td>
-                <td><?php echo $_GET["bName"]; ?>.<br /></td>
-            </tr>
-            <tr>
-                <td>Voornaam:</td>
-                <td><?php echo $_GET["fName"]; ?>.<br /></td>
-            </tr>
-            <tr>
-                <td>Achternaam:</td>
-                <td><?php echo $_GET["lName"]; ?>.<br /></td>
-            </tr>
-            <tr>
-                <td>Telefoon:</td>
-                <td><?php echo $_GET["phone"]; ?>.<br /></td>
-            </tr>
-            <tr>
-                <td>E-mail:</td>
-                <td><?php echo $_GET["email"]; ?>.<br /></td>
-            </tr>
-            <tr>
-                <td>bericht:</td>
-                <td><?php echo $_GET["message"]; ?>.<br /></td>
-            </tr>
-        </table>';
+        <h1>
+            Uitschrijfformulier KW1C
+        </h1>
+    <table>
+    <tr>
+        <td><label for="fLName">Voor en achternaam</label></td>
+        <td><input type="text" id="fLName" name="fLName"></td>
+    </tr>
+    <tr>
+        <td><label for="sNumber">Studentnummer</label></td>
+        <td><input type="text" id="sNumber" name="sNumber"></td>
+    </tr>
+    <tr>
+        <td><label for="why">Datum van uitschrijving</label></td>
+        <td><input type="text" id="why" name="why"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="why">Reden van uitschrijving</label><br>
+        </td>
+        <td>
+            <select>
+                <option value="Te slechte resultaten">Te slechte resultaten</option>
+                <option value="Ik wordt gepest">Ik wordt gepest</option>
+                <option value="Ik snap er niets van">Ik snap er niets van</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="year">Leerjaar</label><br>
+        </td>
+        <td>
+            <input type="radio" name="gender" value="1e leerjaar"> 1e leerjaar<br>
+            <input type="radio" name="gender" value="2e leerjaar"> 2e leerjaar<br>
+            <input type="radio" name="gender" value="3e leerjaar"> 3e leerjaar<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox" id="successClass" name="successClass" value="Ik wil me aanmelden bij de successklas.">
+            <label for="successClass">Ik wil me aanmelden bij de successklas</label><br>
+            <input type="checkbox" id="deleteData" name="deleteData" value="Verwijder mijn gegevens uit het systeem.">
+            <label for="deleteData">Verwijder mijn gegevens uit het systeem</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="deleteData">Schrijf hieronder de reden van je uitschrijving op</label><br>
+            <input type="text" id="tBWhy" name="tBWhy" width="1000" height="500">
+        </td>
+    </tr>
+
+
+
+
+    <tr>
+        <td>
+            <input type="submit" value="Versturen" id="submit">
+        </td>
+    </tr>
 <?php
+
 
 
 ?>

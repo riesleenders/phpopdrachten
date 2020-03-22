@@ -3,7 +3,7 @@
  * User: Ries Leenders
  * Date: 22-3-2020
  * Time: 10:20
- * File: opdracht5.1.php
+ * File: form_data5.1.php
  */
 ?>
     <!DOCTYPE HTML>
@@ -88,35 +88,33 @@
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
 
-        <h1>
-            RESTARIA KEES KROKET
-        </h1>
-        <br>
-        <p>Visstraat 12<br>
-            5211 DN 's-Hertogenbosch<br>
-            073 613 6720<br>
-            info@restariakeeskroket.nl
-        </p>
-        <form action="form_data5.1.php" method="get" id="form1">
-            <label for="bName">Bedrijfsnaam</label><br>
-            <input type="text" id="bName" name="bName"><br>
-            <label for="fName">Voornaam</label><br>
-            <input type="text" id="fName" name="fName"><br>
-            <label for="lName">Achternaam</label><br>
-            <input type="text" id="lName" name="lName"><br>
-            <label for="phone">Telefoon</label><br>
-            <input type="text" id="phone" name="phone"><br>
-            <label for="email">E-mail</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="message">Bericht</label><br>
-            <input type="text" id="message" name="message"><br>
-            <input type="submit" value="Versturen" id="submit"><br>
-        </form>
-        <br>
-
-
+        <table>
+            <tr>
+                <td>Bedrijfsnaam:</td>
+                <td><?php echo $_GET["bName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Voornaam:</td>
+                <td><?php echo $_GET["fName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Achternaam:</td>
+                <td><?php echo $_GET["lName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Telefoon:</td>
+                <td><?php echo $_GET["phone"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><?php echo $_GET["email"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>bericht:</td>
+                <td><?php echo $_GET["message"]; ?>.<br /></td>
+            </tr>
+        </table>';
 <?php
-
 
 
 ?>
