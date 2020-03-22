@@ -1,9 +1,9 @@
 <?php
 /**
  * User: Ries Leenders
- * Date: 13-3-2020
- * Time: 12:09
- * File: opdracht4.4.php
+ * Date: 22-3-2020
+ * Time: 10:20
+ * File: form_data.php
  */
 ?>
     <!DOCTYPE HTML>
@@ -88,28 +88,33 @@
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
 
+        <table>
+            <tr>
+                <td>Bedrijfsnaam:</td>
+                <td><?php echo $_GET["bName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Voornaam:</td>
+                <td><?php echo $_GET["fName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Achternaam:</td>
+                <td><?php echo $_GET["lName"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>Telefoon:</td>
+                <td><?php echo $_GET["phone"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><?php echo $_GET["email"]; ?>.<br /></td>
+            </tr>
+            <tr>
+                <td>bericht:</td>
+                <td><?php echo $_GET["message"]; ?>.<br /></td>
+            </tr>
+        </table>';
 <?php
 
-date_default_timezone_set('Europe/Amsterdam');
-
-$dayCounter = date('w');
-$date1 = date('d-m-Y');
-
-$telDays = date('w');
-
-
-
-echo(strtotime("+$telDays"));
-
-
-
-
-for ($telDays = -1; $telDays <= 7; $telDays++)
-{
-    echo "Dag " . $telDays . " is " . (strtotime("now", date('w')) . " " . $date1 . "<br>");
-
-
-
-}
 
 ?>
