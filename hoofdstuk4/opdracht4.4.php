@@ -104,9 +104,9 @@ echo(strtotime("+$telDays"));
 
 
 
-for ($telDays = -1; $telDays <= 7; $telDays++)
+for ($telDays = -1; $telDays <= 7; $telDays++, $date1)
 {
-    echo "Dag " . $telDays . " is " . (strtotime("now", date('w')) . " " . $date1 . "<br>");
+    echo "Dag " . $telDays . " is " . (strtotime("+1day", date('d')) . " " . $date1 . "<br>");
 
 
 
