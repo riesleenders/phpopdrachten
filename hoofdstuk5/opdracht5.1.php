@@ -97,7 +97,7 @@
             073 613 6720<br>
             info@restariakeeskroket.nl
         </p>
-        <form action="form_data5.1.php" method="get" id="form1">
+        <form action="form_data5.1.php" method="post">
             <label for="bName">Bedrijfsnaam</label><br>
             <input type="text" id="bName" name="bName"><br>
             <label for="fName">Voornaam</label><br>
