@@ -91,64 +91,68 @@
         <h1>
             Uitschrijfformulier KW1C
         </h1>
-    <table>
-    <tr>
-        <td><label for="fLName">Voor en achternaam</label></td>
-        <td><input type="text" id="fLName" name="fLName"></td>
-    </tr>
-    <tr>
-        <td><label for="sNumber">Studentnummer</label></td>
-        <td><input type="text" id="sNumber" name="sNumber"></td>
-    </tr>
-    <tr>
-        <td><label for="why">Datum van uitschrijving</label></td>
-        <td><input type="text" id="why" name="why"></td>
-    </tr>
-    <tr>
-        <td>
-            <label for="why">Reden van uitschrijving</label><br>
-        </td>
-        <td>
-            <select>
-                <option value="Te slechte resultaten">Te slechte resultaten</option>
-                <option value="Ik wordt gepest">Ik wordt gepest</option>
-                <option value="Ik snap er niets van">Ik snap er niets van</option>
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="year">Leerjaar</label><br>
-        </td>
-        <td>
-            <input type="radio" name="gender" value="1e leerjaar"> 1e leerjaar<br>
-            <input type="radio" name="gender" value="2e leerjaar"> 2e leerjaar<br>
-            <input type="radio" name="gender" value="3e leerjaar"> 3e leerjaar<br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <input type="checkbox" id="successClass" name="successClass" value="Ik wil me aanmelden bij de successklas.">
-            <label for="successClass">Ik wil me aanmelden bij de successklas</label><br>
-            <input type="checkbox" id="deleteData" name="deleteData" value="Verwijder mijn gegevens uit het systeem.">
-            <label for="deleteData">Verwijder mijn gegevens uit het systeem</label><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="deleteData">Schrijf hieronder de reden van je uitschrijving op</label><br>
-            <input type="text" id="tBWhy" name="tBWhy" width="1000" height="500">
-        </td>
-    </tr>
+
+        <table>
+            <tr>
+                <form action="uitschrijving.php" method="post">
+                <td><label for="fLName">Voor en achternaam</label></td>
+                <td><input type="text" id="fLName" name="fLName"></td>
+            </tr>
+            <tr>
+                <td><label for="sNumber">Studentnummer</label></td>
+                <td><input type="text" id="sNumber" name="sNumber"></td>
+            </tr>
+            <tr>
+                <td><label for="why">Datum van uitschrijving</label></td>
+                <td><input type="text" id="why" name="why"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="why">Reden van uitschrijving</label><br>
+                </td>
+                <td>
+                    <select>
+                        <option value="Te slechte resultaten">Te slechte resultaten</option>
+                        <option value="Ik wordt gepest">Ik wordt gepest</option>
+                        <option value="Ik snap er niets van">Ik snap er niets van</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="year">Leerjaar</label><br>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="1e leerjaar"> 1e leerjaar<br>
+                    <input type="radio" name="gender" value="2e leerjaar"> 2e leerjaar<br>
+                    <input type="radio" name="gender" value="3e leerjaar"> 3e leerjaar<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="successClass" name="successClass" value="Ik wil me aanmelden bij de successklas.">
+                    <label for="successClass">Ik wil me aanmelden bij de succesklas</label><br>
+                    <input type="checkbox" id="deleteData" name="deleteData" value="Verwijder mijn gegevens uit het systeem.">
+                    <label for="deleteData">Verwijder mijn gegevens uit het systeem</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="deleteData">Schrijf hieronder de reden van je uitschrijving op</label><br>
+                    <input type="text" id="tBWhy" name="tBWhy" width="1000" height="500">
+                </td>
+            </tr>
 
 
 
 
-    <tr>
-        <td>
-            <input type="submit" value="Versturen" id="submit">
-        </td>
-    </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Versturen" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
 <?php
 
 

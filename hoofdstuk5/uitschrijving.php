@@ -88,7 +88,57 @@
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
 
-
+    <table>
+        <tr>
+            <td>Voor- en achternaam:</td>
+            <td><?php
+                echo ($_POST["fLName"]);
+                ?>.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Studentnummer:</td>
+            <td><?php
+                echo ($_POST["sNumber"]);
+                ?>.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Reden uitschrijving:</td>
+            <td><?php
+                echo ($_POST["why"]);
+                ?>.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Geslacht:</td>
+            <td><?php
+                echo ($_POST["gender"]);
+                ?>.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Aanmelden bij succesklas:</td>
+            <td><?php
+                echo ($_POST["successClass"]);
+                ?><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Data verwijderen uit systeem:</td>
+            <td><?php
+                echo ($_POST["deleteData"]);
+                ?><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Reden uitschrijving in woorden:</td>
+            <td><?php
+                echo ($_POST["tBWhy"]);
+                ?>.<br/>
+            </td>
+        </tr>
+    </table>
 <?php
 
 
